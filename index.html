@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>你的名字 | 个人主页</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                "Microsoft YaHei",
+                Arial,
+                sans-serif;
+            line-height: 1.7;
+            color: #24292f;
+            background: #f6f8fa;
+        }
+
+        header {
+            padding: 70px 20px;
+            text-align: center;
+            color: white;
+            background: linear-gradient(135deg, #24292f, #0969da);
+        }
+
+        header h1 {
+            margin: 0 0 12px;
+            font-size: 42px;
+        }
+
+        header p {
+            margin: 6px 0;
+            font-size: 18px;
+        }
+
+        nav {
+            padding: 14px;
+            text-align: center;
+            background: white;
+            border-bottom: 1px solid #d0d7de;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #0969da;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            width: min(900px, 92%);
+            margin: 35px auto;
+        }
+
+        section {
+            margin-bottom: 28px;
+            padding: 28px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 3px 14px rgba(0, 0, 0, 0.07);
+        }
+
+        h2 {
+            margin-top: 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #0969da;
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+        }
+
+        .profile img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #dbeafe;
+        }
+
+        .project {
+            margin-bottom: 18px;
+            padding-bottom: 18px;
+            border-bottom: 1px solid #d8dee4;
+        }
+
+        .project:last-child {
+            border-bottom: none;
+        }
+
+        a {
+            color: #0969da;
+        }
+
+        footer {
+            padding: 25px;
+            text-align: center;
+            color: #57606a;
+        }
+
+        @media (max-width: 650px) {
+            header h1 {
+                font-size: 32px;
+            }
+
+            .profile {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>你的名字</h1>
+    <p>安徽大学 · 人工智能学院 · 硕士研究生</p>
+    <p>研究方向：深度强化学习、多智能体强化学习、具身智能</p>
+</header>
+
+<nav>
+    <a href="#about">个人简介</a>
+    <a href="#research">研究方向</a>
+    <a href="#publications">论文成果</a>
+    <a href="#projects">项目经历</a>
+    <a href="#contact">联系方式</a>
+</nav>
+
+<main>
+
+    <section id="about">
+        <h2>个人简介</h2>
+
+        <div class="profile">
+            <img src="avatar.jpg" alt="个人头像">
+
+            <div>
+                <p>
+                    你好，我是你的名字，目前是安徽大学人工智能学院硕士研究生。
+                    本科和硕士阶段均从事计算机相关学习与研究。
+                </p>
+
+                <p>
+                    我的主要研究兴趣包括深度强化学习、多智能体强化学习、
+                    智能体通信和具身智能。
+                </p>
+
+                <p>
+                    目前正在寻找人工智能算法、强化学习及具身智能相关岗位。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="research">
+        <h2>研究方向</h2>
+
+        <ul>
+            <li>深度强化学习</li>
+            <li>多智能体强化学习</li>
+            <li>基于通信的多智能体协作</li>
+            <li>具身智能与机器人决策</li>
+            <li>智能体长期记忆与信息融合</li>
+        </ul>
+    </section>
+
+    <section id="publications">
+        <h2>论文成果</h2>
+
+        <p>
+            <strong>论文标题</strong><br>
+            作者1，作者2，你的名字，作者4<br>
+            <em>Expert Systems with Applications</em>，年份。
+        </p>
+
+        <p>
+            <a href="#">论文链接</a> |
+            <a href="#">代码链接</a> |
+            <a href="#">PDF</a>
+        </p>
+    </section>
+
+    <section id="projects">
+        <h2>项目经历</h2>
+
+        <div class="project">
+            <h3>基于通信的多智能体强化学习</h3>
+            <p>
+                研究多智能体环境中的消息通信、特征过滤和协作决策，
+                使用 PyTorch 实现相关算法，并在多个 MARL 环境中进行实验。
+            </p>
+            <a href="#">查看项目代码</a>
+        </div>
+
+        <div class="project">
+            <h3>深度强化学习算法复现</h3>
+            <p>
+                实现并测试 DQN、PPO、VDN、IPPO 和自然策略梯度等算法。
+            </p>
+            <a href="#">查看项目代码</a>
+        </div>
+
+        <div class="project">
+            <h3>具身智能学习项目</h3>
+            <p>
+                学习视觉感知、机器人控制、强化学习和视觉语言动作模型等技术。
+            </p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>联系方式</h2>
+
+        <p>邮箱：your-email@example.com</p>
+
+        <p>
+            GitHub：
+            <a href="https://github.com/你的用户名">
+                https://github.com/你的用户名
+            </a>
+        </p>
+
+        <p>
+            Google Scholar：
+            <a href="#">个人学术主页</a>
+        </p>
+
+        <p>
+            <a href="resume.pdf">下载个人简历</a>
+        </p>
+    </section>
+
+</main>
+
+<footer>
+    © 2026 你的名字 · Powered by GitHub Pages
+</footer>
+
+</body>
+</html>
